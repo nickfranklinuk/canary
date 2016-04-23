@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Warrant Canary</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Warrant Canary</h1>
+  <h2>Dead man's switch.</h2>
+
+  <br>
+
+  <div class="first-setup">
+    <h1>Register</h1>
+    <br><label for="aviary">Aviary</label> <input type="text" id="aviary"></input>
+    <br><label for="canary">Canary</label> <input type="text" id="canary"></input>
+    <br><label for="canarydb">CanaryDb</label> <input type="text" id="canarydb"></input>
+    <br><label for="perms">Permissions</label> <input type="text" id="perms"></input>
+    <br><label for="permsdb">PermissionsDb</label> <input type="text" id="permsdb"></input>
+    <br>
+    <button id="send" onclick="registerContracts()">Register contracts</button>
+    <br>
+    <h1>Fetch</h1>
+    <br><label for="name">Name</label>
+    <select id="name">
+      <option value="aviary">Aviary</option>
+      <option value="canary">Canary</option>
+      <option value="canarydb">CanaryDb</option>
+      <option value="perms">Permissions</option>
+      <option value="permsdb">PermissionsDb</option>
+    </select>
+    <br><br>
+    <button id="get" onclick="getContract()">Get contract</button>
+    <br>
+    <h3>Contract: <span class="black"><span id="registered"></span></span></h3>
+    <br>
+    <span id="status"></span>
+  </div>
+
+  <div class="create-canary">
+    <h1>Create Canary</h1>
+
+  </div>
+
+  <div class="check-canary">
+    <h1>Check Canary</h1>
+
+  </div>
+</body>
+</html>
